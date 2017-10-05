@@ -1,0 +1,31 @@
+/*estilos css*/
+
+h1 {
+    color: red;
+    font-family: "Arial";
+}
+
+strong {
+    color: #7806FF;
+    font-size: 30px;
+}
+
+p {
+    color: #B42954;
+    font-size: 20px;
+    font-family: "Times New Roman";
+}
+
+em {
+    color: #3FA523;
+}
+
+ul li {
+    background-color: #7F7F7F;
+    
+}
+
+li {
+    color: #F0FF57;
+    font-family: "Courier New";
+}
