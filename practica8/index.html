@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="estilos/styles.css">
+    <script type="text/javascript" src="js/javaScript.js"></script>
+</head>
+<body>
+
+<h1>Por favor, introduce tus datos.</h1>
+<form>
+<fieldset>
+    <legend>Tu cara</legend>   
+    <label for="foto">Foto:</label><input type="file" required> <br>
+    <label for="imagen">Previsualización de imagen: <img src="" id="preview" ></label>
+</fieldset>
+    
+<fieldset>
+    <legend>Datos generales</legend>
+    <label for="nombre">Nombre:</label><input type="text" placeholder="Nombre completo" required> <br />
+    <label for="genero">Género:</label> 
+    <input type="radio" name="sexo" value="hombre" required>Hombre 
+    <input type="radio" name="sexo" value="mujer"> Mujer <br />
+    <label for="edad">Edad:</label> <input type="number" name="edad" max="100" min="18"><br />
+    <label for="fecha">Fecha de nacimiento:</label> <input type="date"><br/>
+    <label for="color">Color favorito:</label><input type="color"> <br />
+    <label for="pais">País:</label> <select name="pais">
+            <option value="canada">Canadá</option>
+            <option value="España">España</option>
+            <option value="España">Francia</option>
+          </select>
+</fieldset>
+<fieldset>
+    <legend>Otras Características</legend>
+    <label for="altura">Altura:</label> <span class="minimo">Bajo</span><input type="range" min="1" max="20"><span class="maximo">Alto</span> <br />
+    <label for="salario">Salario:</label> <span class="minimo">Pobre</span><input type="range" min="1" max="10"><span class="maximo">Rico</span>
+</fieldset>
+<fieldset>
+    <legend>Información de Contacto</legend>
+    <label for="email">Email:</label> <input type="email" required> <br />
+    <label for="movil">Móvil:</label> <input type="text"> <br />
+    <label for="direccion">Dirección:</label><textarea rows="3" cols="40"></textarea><br />
+    <label for="contacto">Método de contacto:</label> <input type="checkbox">Email 
+    <input type="checkbox">Whatsapp
+    <input type="checkbox">Skype
+</fieldset>
+    <input type="submit" value="Enviar" id="enviar">
+    </form>
+</body>
+</html>
