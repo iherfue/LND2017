@@ -23,7 +23,7 @@ label {
 
 label:hover {
     transition: 1.5s;
-    transform: scale(3);
+    transform: scale(2);
 }
 
 #enviar{
