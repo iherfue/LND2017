@@ -8,7 +8,7 @@ fieldset {
    margin: 10px;
 }
 
-fieldset > label {
+fieldset  label {
     width: 18%;
    float: left;
 }
