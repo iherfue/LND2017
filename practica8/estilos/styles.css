@@ -8,8 +8,9 @@ fieldset {
    margin: 10px;
 }
 
-label {
+fieldset > label {
     width: 18%;
+   float: left;
 }
 
 .minimo {
