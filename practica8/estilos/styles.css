@@ -8,9 +8,9 @@ fieldset {
    margin: 10px;
 }
 
-label {
+fieldset  label {
     width: 18%;
-    float: left;
+   float: left;
 }
 
 .minimo {
@@ -21,9 +21,8 @@ label {
     background-color: #6F00FB;
 }
 
-input:hover {
-    transition: 1.5s;
-    transform: scale(3);
+label:hover {
+   font-size: 1.5em;
 }
 
 #enviar{
