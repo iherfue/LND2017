@@ -1,0 +1,75 @@
+body {
+	width: 1024px;
+	margin: 0px auto;
+}
+
+body > div {
+	width: 1024px;
+	margin: 0px auto;
+}
+
+header {
+    
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    
+}
+
+/*Menu - inicio aside*/
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+nav {
+    background-color: #EEEEEE;
+    text-decoration: none;
+    width: 100px;
+    height: 280px;
+    float: left;
+}
+
+
+nav ul {
+    margin-left: -35px;
+    margin-top: 5px;
+}
+
+/*FIN DE MENU Y ASIDE*/
+
+article {
+    width: 350px;
+    padding: 10px;
+    float: left;
+}
+
+/* CAJA DEL SECTION (centro)*/
+main section {
+    background-color: white;  
+    float: left;
+    margin-top: 15px;
+    width: 924px;
+    
+}
+
+main section > h1 {
+    margin: auto;
+    margin-left: 10px;
+    padding-top: 5px;
+    
+}
+
+/* PIE DE PAGINA*/
+
+footer {
+	background-color: black;
+    width: inherit;
+    height: 40px;
+	padding: 15px;
+	color: white;
+    float: left;
+	text-align: center;
+}
