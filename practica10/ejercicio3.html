@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+<style>
+p > a { color: red; }     
+</style>
+    
+</head>
+<body>
+Ejercicio 3 <br><br>
+
+A partir de la siguiente regla CSS:   <br><br>
+
+p > a { color: red; }   <br><br>
+
+Y el siguiente código HTML:
+
+<p><a href="#">Enlace1</a></p>
+<p><span><a href="#">Enlace2</a></span></p>
+<p><a href="#"><span>Texto2</span></a></p>
+
+Explica la salida por pantalla. 
+<h3>La regla css aplica un color rojo a la letra en los elementos &lt;a&gt; que sean hijos directos de &lt;p&gt; si nosotros ponemos &lt;p&gt;&lt;span&gt;&lt;a href="#"&gt;Enlace2&lt;/a&gt;&lt;/span&gt;&lt;/p&gt; <br> La regla no se aplicara puesto que &lt;a&gt; no es hijo directo de &lt;p&gt; </h3> <br>
+    <strong>¿Cuáles son las diferencias con el selector de la pregunta anterior?</strong><br>
+<p>En la anterior selecciona todos los elementos &lt;a&gt; que esten dentro de un &lt;p&gt; independientemente de si es hijo o no, en cambio en este la regla se aplicará a los &lt;a&gt; que sean hijos directos de &lt;p&gt;</p>
+</body>
+</html>

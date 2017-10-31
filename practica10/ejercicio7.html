@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+<style>
+p:first-line {letter-spacing: 6pt;}
+p.definicion:first-letter {font-size: 300%; color: red; }   
+</style>
+    
+</head>
+<body> 
+Ejercicio 7 <br><br>
+
+Crea una página HTML que tenga un párrafo de varias líneas. Aplícale las siguientes reglas y explica para qué sirven: <br><br>
+    
+p:first-line {letter-spacing: 6pt;}<br>
+p.definicion:first-letter {font-size: 300%; color: red; }<br>
+    
+<h2>Párrafo</h2>
+    
+<p class="definicion">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa </p>
+<p class="definicion"><b>Note:</b> For this selector to work in IE 5.5-8, you must specify the old, single-colon CSS2 syntax (:first-line instead 
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla  of ::first-line).</p>
+    <br><br>
+<h3>La primera regla Css que estamos aplicando a la etiqueta &lt;p&gt; es que la primera linea del párrafo tenga el estilo que hemos aplicado (un espaciado entre las letras) esto lo hacemos usando el "first-line" en donde únicamente se podra aplicar en el primer renglón donde haya una etiqueta &lt;p&gt;. <br><br>
+La seguna regla que hemos aplicado es que la primera letra tenga un tamaño (font-size) de 300% y sea de color rojo. Si nos fijamos en la regla le estamos añadiendo una "clase" llamada "definicion" a la etiqueta &lt;p&gt; esta clase solo funcionará en las etiquetas p exclusivamente, por ejemplo si se añade una clase en este caso "definicion" a una etiqueta &lt;h1&gt; el estilo no será aplicado ya que unicamente puede ser aplicado en la etiqueta &lt;p&gt;.
+</h3>
+</body>
+</html>
