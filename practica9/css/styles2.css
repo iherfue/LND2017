@@ -65,11 +65,11 @@ main section > h1 {
 /* PIE DE PAGINA*/
 
 footer {
-	background-color: black;
+    background-color: black;
+    float: left;
     width: 994px;
     height: 40px;
-	padding: 15px;
-	color: white;
-    float: left;
-	text-align: center;
+    padding: 15px;
+    color: white;
+    text-align: center;
 }
