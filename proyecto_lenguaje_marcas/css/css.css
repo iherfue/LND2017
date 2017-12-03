@@ -220,6 +220,12 @@ article > img {
     font-weight: bold;  
 }
 
+/***********************
+************************
+************************
+********PIE DE PAGINA***
+***********************/
+
 footer {
     
       background-color: #263238;
@@ -254,6 +260,17 @@ footer div img{
     margin-left: 15px;
     
 }
+
+
+@media (max-width: 320px) { 
+
+    
+    footer img {
+        
+        display: none;
+    }
+}
+
 
 /**Tutoriales*/
 
@@ -344,7 +361,22 @@ main a h3 {
     
 }
 
+@media (max-width: 810px) {
+    
 
+    .tutoriales {
+        
+        padding: 5px;
+    }
+    
+   
+    .tutoriales a  img {
+        
+        width: 100%;
+    }
+    
+
+}
 
 /********************************************
 *********************************************
