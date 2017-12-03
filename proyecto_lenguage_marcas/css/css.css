@@ -1,0 +1,435 @@
+* {
+    list-style: none;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.contenedor {
+        
+    background-color: #778899;
+	width: 100%;
+	max-width: 1440px;
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+      
+}
+
+
+header div img {
+    
+    margin-top: -4px;
+    float: left;
+    width: 120px;
+}
+
+
+nav a {
+    
+    color: white;
+}
+
+nav {
+    
+    float: right;
+}
+
+header   {
+    
+    background-color: #263238;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+
+header h1   {
+ 
+    float: left;
+    margin-top: 25px;
+}
+
+nav ul li {
+   
+    margin-top: 30px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+#menu {
+
+  display: none;
+}
+
+.icon-menu {
+    
+    display: none;
+}
+
+@media (max-width: 810px){
+    
+   
+    
+    header div img {
+        
+        float: left;
+        margin-left: 30px;
+    }
+    
+    header h1 {
+        
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .icon-menu {
+        
+        position: absolute;
+        cursor: pointer;    
+        display: -webkit-box;    
+        display: -ms-flexbox;    
+        display: flex;
+        float: left;
+        margin-left: 0px;
+        margin-top: 35px;
+        font-size: 30px;
+    }
+    
+    nav {
+        position: absolute;
+        top: 100px;
+        background: rgba(51,51,51,0.9);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        display: none;
+        margin-left: 70%;
+    }
+    
+    #menu:checked ~ nav{
+        
+        -webkit-transform: translateX(0%);   
+        transform: translateX(0%);
+        top: 100px;
+        left: -70%;
+        width: 100%;
+        height: 1024px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .menus {
+        
+        float: left;
+        text-align: left;
+        width: 660px;
+        margin-left: -40px;
+        padding: 10px;  
+        border-bottom: 5px solid white;
+        
+    }
+    
+}
+
+@media (max-width: 344px){
+    
+    header img {
+        
+        display: none;
+    }
+    
+    header h1 {
+        
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+}
+
+/************CONTENIDO****************/
+
+section {
+
+    padding: 10px;
+}
+
+.articulo-1 {
+    
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+
+
+article > h2{
+    
+    background-color: #C2185B;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.parrafo {
+    margin-top: 15px;
+}
+
+
+main {
+    
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 110px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-family: 'Work Sans', sans-serif;
+}
+
+article > img {
+    
+    margin-top: 20px;
+}
+
+
+
+.parrafo-hardware {
+    
+    text-align: left;
+}
+
+.parrafo-hardware > span {
+    
+    font-weight: bold;  
+}
+
+footer {
+    
+      background-color: #263238;
+      margin-top: 50px;
+      font-family: 'Work Sans', sans-serif;
+      color: white;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 15px;
+}
+
+
+footer div {
+    
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+footer div p {
+
+    display: flex; 
+    align-self: center;
+    
+}
+
+footer div img{
+
+    margin-left: 15px;
+    
+}
+
+/**Tutoriales*/
+
+iframe{
+    
+    border-width: 0px;
+}
+
+.tutoriales {
+    
+    margin-bottom: 15px;
+}
+
+.tutoriales-titulo{
+    
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.articulo-2 {
+    
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+     -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+
+.tutoriales  {
+    
+    background-color: #C2185B;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tutoriales h2 {
+    
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.tutoriales p {
+    
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.tutoriales > iframe {
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+main a h3 {
+    
+    text-align: center;
+    color: black;
+    background-color: #C2185B;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+
+
+/********************************************
+*********************************************
+***********FORMULARIO************************
+********************************************/
+
+form > h5 {
+    
+    padding: 15px;
+}
+
+.box-formulario {
+    
+    width: 100%;
+    background-color: rgba(250,250,250,0.30);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.box-formulario input[type='text'], input[type='email'], input[type='radio'], input[type='checkbox'], input[type='password'] {
+    
+    margin: 10px;
+	padding: 5px;
+	margin-top: 15px;
+}
+
+
+fieldset {
+    
+    background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+fieldset label:hover {
+    
+	background-color: #C2185B;
+    border-radius: 5px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+    color: white;
+    padding: 5px;
+}
+
+
+fieldset > p {
+    
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+legend {
+    
+    background-color: #C2185B;
+    color: white;
+    padding: 10px;
+}
+
+
+fieldset select, input[type='date'], input[type='time'], input[type='range'], input[type='color'] {
+    
+    margin-top: 15px;
+}
+
+fieldset  textarea { 
+    
+	width: 250px !important;
+	height: 70px !important;
+}
+
+
+fieldset input[type='submit'], input[type='reset'] {
+    
+    background-color: #C2185B;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+

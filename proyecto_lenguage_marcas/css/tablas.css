@@ -1,0 +1,265 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+.titulo-placas {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: black;
+    background: -webkit-gradient(linear,left top, left bottom,from(#C2185B),to(white));
+    background: linear-gradient(#C2185B,white);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.titulo {
+    
+    display: none;
+    
+}
+
+
+.columns {
+    
+    float: left;
+    width: 25.00%;
+    padding: 10px;
+}
+
+
+.box-tabla {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.tabla {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabla li:hover {
+    
+    -webkit-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5)
+}
+
+.encabezado {
+    
+    background-color: #C2185B;
+    color: white;
+    font-size: 25px;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.interaccion {
+    
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    color: black;
+}
+
+.interaccion:hover {
+    
+    background-color: #F06292;
+    font-weight: bold;
+}
+
+/*IMAGEN EN COLUMNAS*/
+
+.imagen {
+    
+    margin-left: 15%;
+    border-radius: 50%;
+    border: 7px solid black;
+    margin-top: 15px;
+    background-color: white;
+    width: 70%;
+}
+
+@media (max-width: 965px) {
+    
+    
+    .titulo-desktop {
+        
+        display: none;
+    }
+    
+    .titulo {
+        
+        display: -webkit-box;   
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .columns {
+        
+        margin-top: 10px;
+        width: 100%;
+
+    }
+    
+    .box-tabla {
+        
+        margin-top: 20px;       
+        margin-left: 0px;
+        width: 100%;
+}
+    
+    .imagen {
+        
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+}
+
+.columns img {
+    
+    margin-bottom: 60px;
+}
+
+/*TABLA**************/
+
+
+section h2 {
+
+    text-align: center;
+}
+
+.tabla-precio {
+    
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+}
+
+table {
+    
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+}
+
+.tabla-precio th {
+    
+    background-color: #C2185B;
+    padding: 10px;
+}
+
+.tabla-precio td {
+    
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    
+    th:nth-child(1) {
+      
+      background-color: rgba(194,24,91,0.9);    
+      font-weight: bold;    
+    }
+    
+    td:nth-child(1) {
+      
+      background-color: rgba(194,24,91,0.9);
+      font-weight: bold;    
+    }
+    
+    th:nth-child(2) {
+      
+      background-color: rgba(255,153,0,0.8);
+        
+    }
+    
+     td:nth-child(2) {
+      
+      background-color: rgba(255,153,0,0.8);
+        
+    }
+    
+    th:nth-child(3) {
+      
+      background-color: rgba(135,185,16,0.8);
+    
+    }
+    
+    td:nth-child(3) {
+
+      background-color: rgba(135,185,16,0.8);
+    }
+    
+    th:nth-child(4) {
+        
+     background-color: rgba(229,46,4,0.8);
+        
+    }
+    
+    td:nth-child(4) {
+        
+     background-color: rgba(229,46,4,0.8);
+        
+    }
+    
+    th:nth-child(5) {
+    
+     background-color: #32A5CD;
+        
+    }
+    
+    td:nth-child(5) {
+    
+     background-color: #32A5CD;
+        
+    }
+    
+    tr {
+      
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex; 
+     -webkit-box-orient: horizontal; 
+     -webkit-box-direction: normal; 
+     -ms-flex-direction: row; 
+     flex-direction: row;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+      
+    }
+    
+    td, th {
+    
+     text-align: center;
+     -webkit-box-flex: 1;
+     -ms-flex: 1 1 150px;
+     flex: 1 1 150px;
+     border: 1px solid rgba(0,0,0,0.5);
+        
+    }
+}
