@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Raspberry Pi</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ivan Hernandez Fuentes">
+    <meta name="description" content="Información sobre Raspberry pi, también existen tutoriales interesantes para hacer con la Raspberry. Mostramos proyectos de otros usuarios.">
+    <meta name="keywords" content="robotica,raspberry,placas,aprender fácilmente con raspberry,tutoriales raspberry pi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css-->
+    <link rel="stylesheet" href="css/css.css">
+    <link rel ="stylesheet" href="css/fontello.css">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class ="contenedor">  
+    <header>
+        <div class="nav-menu">
+        <img src="images/logo.png" alt="logo">
+        <h1>Raspberry Pi</h1>
+        <input type="checkbox" id="menu">
+            <span class="icono"><label class="icon-menu" for="menu"></label></span>
+        <nav>
+            <ul>
+                <li class="menus"><a href="index.html" target="_blank">Inicio</a></li>
+                <li class="menus"><a href="placas.html" target="_blank">Placas</a></li>
+                <li class="menus"><a href="tutoriales.html" target="_blank">Tutoriales</a></li>
+                <li class="menus"><a href="raspberry_mas.html" target="_blank">Raspberry +</a></li>
+                <li class="menus"><a href="contacto.html" target="_blank">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+<main>
+    
+        <article class="articulo-1">
+            <h2>¿Qué es Raspberry Pi?</h2>	
+            <p class="parrafo">
+               Raspberry Pi es básicamente un ordenador, pero con la particularidad de que es a tamaño reducido y además muy barato, se desarrollo en el Reino Unido por la fundación Raspberry PI (Universidad de Cambridge) en 2011, con el objetivo de hacer más dinámica la enseñanza de la informática en las escuelas, posteriormente en 2012 se empezo a comercializar.
+            </p>
+            <img src="images/raspberry.png" width="300" alt="placa raspberri pi 1">
+        </article>  
+
+        <article class="articulo-1">
+           <h2>Hardware</h2>		
+            <p class="parrafo">
+               Cómo dijimos anteriormente Raspberry PI es una pequeña placa, pero el hardware que lo compone es bastante potente (según nuestras necesidades).
+               Actualmente existen dos modelos diferentes PI 1,2,3,etc.. según el modelo A o B, que básicamente se diferencian en que el modelo A tiene solo un puerto USB, y carece de tarjeta de red Ethernet, tiene 256MB de RAM (1GB los otros modelos), y además incorpora tarjeta de red tanto por cable (Ethernet) como inalámbrica (Wifi), así como Bluetooth.
+            </p><br>
+            <p class="parrafo-hardware">
+                <span>CPU:</span> La CPU en general es ARM segun su modelo la velocidad del relog puede variar de 700MHz(PI 1) a 1,2GHz(PI 3)
+                <br><br>
+                <span>GPU:</span> La GPU que utiliza en todas es una Broadcom VideoCoreIV en 1080p.
+                <br><br>
+                <span>RAM:</span> Raspberry Pi 3 ya llega a 1GB de RAM 
+                <br><br>
+                <span>Almacenamiento:</span> Si bien esto puede ser una ventaja o desventaja según veamos su almacenamiento hasta el momento sigue siendo el mismo mediante una tarjeta MicroSD, aunque hay gente que ha podido usar USB como almacenamiento de momento oficialmente su almacenamiento es en MicroSD.
+            </p>
+            <img src="images/caracteristicas_pi.jpg" width="300" alt="raspberry pi 2 placa">
+        </article>  
+    
+        <article class="articulo-1">
+           <h2>Software</h2>		
+            <p class="parrafo">
+                La Placa Raspberry Pi usa mayoritariamente sistemas operativos GNU/Linux, el S.O oficial es Raspbian derivado de Debian que esta optimiza para el hardaware de la raspberry.<br>
+                Aunque También se le puede instalar otros sistemas operativos por ejemplo, ubuntu Snappy core(solo servidor sin escritorio gráfico), Ubuntu Mate(tiene escritorio gráfico), además de otras derivaciones de S.O que ofrecen otro servicio completamente diferente, es el caso de OSMC o XBMC para uso de Media Center.
+            </p>
+            <img src="images/raspbian_debian.png" width="300" alt="logo-debian y raspbian">
+        </article>  
+
+</main>
+    
+<footer>
+    <div>
+    <p>Página Web sobre Raspberry Pi realizada por Iván Hernández Fuentes</p>
+        <a href="rss/xml_web.xml" target="_blank"><img src="images/rss.png" width="30" height="30" alt="rss"></a>
+    </div>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" />
+        </a>
+        <a href="https://validator.w3.org/feed/check.cgi?url="><img src="images/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a>
+</footer>
+</div>    
+</body>
+</html>

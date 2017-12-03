@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Raspberry Pi</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ivan Hernandez Fuentes">
+    <meta name="description" content="Información sobre Raspberry pi, también existen tutoriales interesantes para hacer con la Raspberry. Mostramos proyectos de otros usuarios.">
+    <meta name="keywords" content="robotica,raspberry,placas,aprender fácilmente con raspberry,tutoriales raspberry pi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel ="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class ="contenedor">  
+    <header>
+        <div class="nav-menu">
+        <img src="images/logo.png" alt="logo">
+        <h1>Raspberry Pi</h1>
+        <input type="checkbox" id="menu">
+            <span class="icono"><label class="icon-menu" for="menu"></label></span>
+        <nav>
+            <ul>
+                <li class="menus"><a href="index.html" target="_blank">Inicio</a></li>
+                <li class="menus"><a href="placas.html" target="_blank">Placas</a></li>
+                <li class="menus"><a href="tutoriales.html" target="_blank">Tutoriales</a></li>
+                <li class="menus"><a href="raspberry_mas.html" target="_blank">Raspberry +</a></li>
+                <li class="menus"><a href="contacto.html" target="_blank">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+    </header>   
+<main>
+<h2 class="tutoriales-titulo">Formulario de Contacto</h2>
+    <div class="box-formulario">
+        <form action="contacto.html" method="POST" enctype="multipart/form-data">
+        <h5>Rellene los campos obligatorios *</h5>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <input type="text" name="nombre" placeholder="Nombre*" required autofocus>    
+            <input type="text" name="apellido" placeholder="Apellido*" required>    
+            <input type="email" name="correo" placeholder="Correo electrónico*" required>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciones su sexo*</legend>
+                    <label>
+                        <input type="radio" name="sexo" value="hombre" required>Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="hombre" required>Femenino
+                    </label>
+        </fieldset>
+        <fieldset>
+            <legend>¿Qué nos va a enviar?</legend>
+                <label>
+                    <input type="checkbox" name="sugerencias" value="sugerencia">Sugerencia
+                </label>
+                <label>
+                    <input type="checkbox" name="sugerencias" value="sugerencia">Enviar mi Proyecto
+                </label>
+                <label>
+                    <input type="checkbox" name="sugerencias" value="sugerencia">Problemas con código
+                </label>
+                <p>Aqui nos puede adjuntar su código, así como imágenes de algún proyecto suyo</p>
+                <input type="file">
+        </fieldset>
+        <fieldset>
+            <legend>Eija su Provincia.</legend>
+			<select name="menu">
+                     	 <option value='alava'>Álava</option>
+					 	 <option value='albacete'>Albacete</option>
+					 	 <option value='alicante'>Alicante/Alacant</option>
+					 	 <option value='almeria'>Almería</option>
+					 	 <option value='asturias'>Asturias</option>
+					 	 <option value='avila'>Ávila</option>
+					 	 <option value='badajoz'>Badajoz</option>
+					 	 <option value='barcelona'>Barcelona</option>
+						 <option value='burgos'>Burgos</option>
+						 <option value='caceres'>Cáceres</option>
+						 <option value='cadiz'>Cádiz</option>
+						 <option value='cantabria'>Cantabria</option>
+						 <option value='castellon'>Castellón/Castelló</option>
+						 <option value='ceuta'>Ceuta</option>
+						 <option value='ciudadreal'>Ciudad Real</option>
+						 <option value='cordoba'>Córdoba</option>
+						 <option value='cuenca'>Cuenca</option>
+						 <option value='girona'>Girona</option>
+						 <option value='laspalmas'>Las Palmas</option>
+						 <option value='granada'>Granada</option>
+						 <option value='guadalajara'>Guadalajara</option>
+						 <option value='guipuzcoa'>Guipúzcoa</option>
+						 <option value='huelva'>Huelva</option>
+						 <option value='huesca'>Huesca</option>
+						 <option value='illesbalears'>Illes Balears</option>
+						 <option value='jaen'>Jaén</option>
+						 <option value='acoruña'>A Coruña</option>
+						 <option value='larioja'>La Rioja</option>
+						 <option value='leon'>León</option>
+						 <option value='lleida'>Lleida</option>
+						 <option value='lugo'>Lugo</option>
+						 <option value='madrid'>Madrid</option>
+						 <option value='malaga'>Málaga</option>
+						 <option value='melilla'>Melilla</option>
+						 <option value='murcia'>Murcia</option>
+						 <option value='navarra'>Navarra</option>
+						 <option value='ourense'>Ourense</option>
+						 <option value='palencia'>Palencia</option>
+						 <option value='pontevedra'>Pontevedra</option>
+						 <option value='salamanca'>Salamanca</option>
+						 <option value='segovia'>Segovia</option>
+						 <option value='sevilla'>Sevilla</option>
+						 <option value='soria'>Soria</option>
+						 <option value='tarragona'>Tarragona</option>
+						 <option value='santacruztenerife'>Santa Cruz de Tenerife</option>
+						 <option value='teruel'>Teruel</option>
+						 <option value='toledo'>Toledo</option>
+						 <option value='valencia'>Valencia/Valéncia</option>
+						 <option value='valladolid'>Valladolid</option>
+						 <option value='vizcaya'>Vizcaya</option>
+						 <option value='zamora'>Zamora</option>
+						 <option value='zaragoza'>Zaragoza</option>
+      		</select>
+            </fieldset>
+            
+        <fieldset>
+            <legend>Introduzca la Fecha y hora de hoy.</legend>
+            <input type="date" name="fecha">
+            <input type="time" name="hora">
+        </fieldset>
+            
+        <fieldset>    
+        <legend>Haganos saber cosas sobre usted</legend>
+            <p>En una escala del 1 al 10 que conocimientos tiene sobre Raspberry.</p>
+            <input type="range" min="1" max="10">
+        </fieldset>
+            
+        <fieldset>
+            <legend>¿Cuál es su color preferido?</legend> 
+            <input type="color">
+        </fieldset>
+            
+        <fieldset>
+            <legend>¿Cómo te caracterizas?</legend>
+            <textarea name="comentario" maxlength="180" placeholder="Máximo 180 carácteres"></textarea>
+        </fieldset>
+            
+        <fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+            
+        </form>
+    </div>
+<h2 class="tutoriales-titulo">Formulario de Registro</h2>
+     <div class="box-formulario">
+        <form action="contacto.html" method="POST" enctype="multipart/form-data">
+        <h5>Rellene los campos obligatorios *</h5>
+    
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <input type="text" name="nombre" placeholder="Nombre de Usuario*" required>    
+            <input type="password" name="password" placeholder="Contraseña*" required>  
+            <input type="password" name="password" placeholder="Repita la Contraseña*" required>  
+            <input type="email" name="correo" placeholder="Correo electrónico*" required>
+            <p>Deseo Suscribirme y recibir Noticias</p>
+              <input type="checkbox" name="suscripcion" value="suscripcion">Suscribirme
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+        </form>
+    </div>
+</main>
+    
+<footer>
+    <div>
+    <p>Página Web sobre Raspberry Pi realizada por Iván Hernández Fuentes</p>
+        <a href="rss/xml_web.xml" target="_blank"><img src="images/rss.png" width="30" height="30"></a>
+    </div>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" />
+        </a>
+        <a href="https://validator.w3.org/feed/check.cgi?url="><img src="images/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a>
+</footer>
+</div>
+</body>
+</html>
