@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--DEFINICION DE LOS ELEMENTOS COMPLEJOS-->
+
+<xs:element name="almacen">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="producto" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+  
+  <xs:element name="producto">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element ref="nombre" />
+        <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="socket"/>
+        <xs:element ref="tipo_disco"/>
+        <xs:element ref="tipo"/>
+        <xs:element ref="dpi"/>
+        <xs:element ref="memoria"/>
+        </xs:choice>
+        <xs:sequence>
+         <xs:element ref="cantidad"/>
+        <xs:element ref="stock"/>
+        <xs:element ref="pvd"/>
+        <xs:element ref="imagen"/>
+        </xs:sequence>
+        <xs:element name="informe">
+          <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="comentario"/>
+          </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+  </xs:sequence>
+      <xs:attribute name="categoria" type="xs:string" use="required"/>
+      </xs:complexType>
+      </xs:element>
+  
+  
+<!--DEFINICION DE LOS ELEMENTOS SIMPLES-->
+  
+<xs:element name="nombre">
+<xs:simpleType>
+  <xs:restriction base="xs:string">
+    <xs:pattern value="([a-z A-Z0-9-]*)"/>
+    <xs:maxLength value="30"/>
+    <xs:minLength value="10"/>
+  </xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+  <xs:element name="socket">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1150"/>
+      <xs:enumeration value="1151"/>
+      <xs:enumeration value="2011-3"/>
+      <xs:enumeration value="2066"/>
+      <xs:enumeration value="AM3"/>
+      <xs:enumeration value="AM4"/>
+      <xs:enumeration value="FM2"/>
+      <xs:enumeration value="TR4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="cantidad">
+    <xs:simpleType>
+      <xs:restriction base="xs:int">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="1000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="stock">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Si"/>
+        <xs:enumeration value="No"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="pvd">
+    <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="9999"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+<xs:element name="imagen" >
+<xs:simpleType>
+  <xs:restriction base="xs:string">
+    <xs:pattern value="([a-z A-Z0-9,./_]*)"/>
+  </xs:restriction>
+</xs:simpleType>
+</xs:element>
+  
+<xs:element name="comentario" default="Sin comentario">
+    <xs:simpleType>
+    <xs:restriction base="xs:string">
+    <xs:pattern value="([a-z A-Z0-9,.-_]*)"/>
+    <xs:maxLength value="250"/>
+    </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+  <xs:element name="dpi">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:totalDigits value="5"/>
+        <xs:minInclusive value="800"/>  <!--Valores DPI entre los rangos-->
+        <xs:maxInclusive value="18000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="tipo">
+   <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GDDR5"/>
+      <xs:enumeration value="GDDR3"/>
+      <xs:enumeration value="DDR3"/>
+      <xs:enumeration value="DDR4"/>
+    </xs:restriction>
+   </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="tipo_disco">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SSD"/>
+      <xs:enumeration value="HDD"/>
+    </xs:restriction>
+  </xs:simpleType>  
+  </xs:element>
+  
+ <xs:element name="memoria">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="2GB|4GB|8GB|16GB|32GB|64GB"/>
+    </xs:restriction>
+  </xs:simpleType>
+ </xs:element>
+ 
+ <!--DEFINICION DE LOS ATRIBUTOS-->
+  
+<xs:attribute name="Procesadores" type="xs:string"/>
+<xs:attribute name="Ratones" type="xs:string"/>
+<xs:attribute name="Graficas" type="xs:string"/>
+<xs:attribute name="Memoria_RAM" type="xs:string"/>
+<xs:attribute name="Discos_Duros" type="xs:string"/>
+  
+</xs:schema>
