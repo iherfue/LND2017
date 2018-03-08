@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<almacen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="almacen.xsd">
+  <producto categoria="Procesadores">
+    <nombre>Intel i3 4170</nombre>
+    <socket>1150</socket><!--Opcional-->
+    <cantidad>100</cantidad>
+    <stock>Si</stock>
+    <pvd>100.99</pvd>
+    <imagen>imagenes/procesadores/i3_4170.jpg</imagen>
+    <informe>
+    <comentario></comentario>
+    </informe>
+  </producto>
+  <producto categoria="Procesadores">
+    <nombre>Intel i7 7700K</nombre>
+    <socket>1151</socket><!--Opcional-->
+    <cantidad>75</cantidad>
+    <stock>Si</stock>
+    <pvd>180</pvd>
+    <imagen>imagenes/procesadores/i7_7700k.jpg</imagen>
+    <informe>
+      <comentario>Producto en buen estado</comentario>
+    </informe>
+  </producto>
+  <producto categoria="Procesadores">
+    <nombre>AMD Ryzen 5 1600X</nombre>
+    <socket>AM4</socket><!--Opcional-->
+    <cantidad>10</cantidad>
+    <stock>Si</stock>
+    <pvd>140</pvd>
+    <imagen>imagenes/procesadores/amd_am4.jpg</imagen>
+    <informe>
+      <comentario>Producto con poca cantidad</comentario>
+    </informe>
+  </producto>
+ <producto categoria="Procesadores">
+    <nombre>AMD Ryzen Threadripper 1950X</nombre>
+    <socket>TR4</socket>
+    <cantidad>0</cantidad>
+    <stock>No</stock>
+    <pvd>786</pvd>
+    <imagen>imagenes/procesadores/amd_1950.jpg</imagen>
+    <informe>
+      <comentario>Producto Agotado pedir existencias</comentario>
+    </informe>
+  </producto>
+  <producto categoria="Ratones">
+    <nombre>MSI Interceptor DS B1</nombre>
+    <dpi>1600</dpi>
+    <cantidad>70</cantidad>
+    <stock>Si</stock>
+    <pvd>20</pvd>
+    <imagen>imagenes/ratones/raton_msi_1600.jpg</imagen>
+    <informe>
+      <comentario>Consultar DPI segun modelo</comentario>
+    </informe>
+  </producto>
+  <producto categoria="Ratones">
+    <nombre>Razer DeathAdder</nombre>
+    <dpi>16000</dpi>
+    <cantidad>40</cantidad>
+    <stock>Si</stock>
+    <pvd>58</pvd>
+    <imagen>imagenes/ratones/raton_16000.jpg</imagen>
+    <informe>
+      <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="Ratones">
+    <nombre>Logitech G203</nombre>
+    <dpi>6000</dpi>
+    <cantidad>0</cantidad>
+    <stock>No</stock>
+    <pvd>40</pvd>
+    <imagen>imagenes/ratones/raton_6000.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="Ratones">
+    <nombre>Logitech G2gkghkj03</nombre>
+    <dpi>6000</dpi>
+    <cantidad>0</cantidad>
+    <stock>No</stock>
+    <pvd>40</pvd>
+    <imagen>imagenes/ratones/raton_6000.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="Graficas">
+    <nombre>Gigabyte GeForce GTX 1050Ti</nombre>
+    <tipo>GDDR5</tipo>
+    <cantidad>0</cantidad>
+    <stock>No</stock>
+    <pvd>160</pvd>
+     <imagen>imagenes/graficas/gddr5_1050.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="Graficas">
+    <nombre>Gigabyte GeForce GT 710</nombre>
+    <tipo>GDDR3</tipo>
+    <cantidad>90</cantidad>
+    <stock>Si</stock>
+    <pvd>40</pvd>
+     <imagen>imagenes/graficas/geforcegt710.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+   <producto categoria="Graficas">
+    <nombre>Asus Radeon R5 230</nombre>
+    <tipo>DDR3</tipo>
+    <cantidad>11</cantidad>
+    <stock>Si</stock>
+    <pvd>50</pvd>
+    <imagen>imagenes/graficas/radeon_230.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="Graficas">
+    <nombre>MSI GeForce GT710</nombre>
+    <tipo>GDDR3</tipo>
+    <cantidad>11</cantidad>
+    <stock>Si</stock>
+    <pvd>59</pvd>
+    <imagen>imagenes/graficas/msi_gddr3.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="MemoriaRAM">
+    <nombre>Crucial 2400 DDR4</nombre>
+    <memoria>8GB</memoria>
+    <cantidad>0</cantidad>
+    <stock>No</stock>
+    <pvd>50</pvd>
+    <imagen>imagenes/ram/crucias_ddr4.jpg</imagen>  
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="MemoriaRAM">
+    <nombre>Kingston DDR3</nombre>
+    <memoria>8GB</memoria>
+    <cantidad>76</cantidad>
+    <stock>Si</stock>
+    <pvd>40</pvd>
+    <imagen>imagenes/ram/kingston_ddr3.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="MemoriaRAM">
+    <nombre>Kingston DDR4</nombre>
+    <memoria>4GB</memoria>
+    <cantidad>0</cantidad>
+    <stock>No</stock>
+    <pvd>90</pvd>
+    <imagen>imagenes/ram/kingston_ddr4.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="MemoriaRAM">
+    <nombre>GskillAegis</nombre>
+    <memoria>4GB</memoria>
+    <cantidad>0</cantidad>
+    <stock>No</stock>
+    <pvd>40</pvd>
+    <imagen>imagenes/ram/aegis_ddr4.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="DiscosDuros">
+    <nombre>Seagate BarraCuda</nombre>
+    <tipo_disco>HDD</tipo_disco>
+    <cantidad>130</cantidad>
+    <stock>Si</stock>
+    <pvd>30</pvd>
+    <imagen>imagenes/discos/seagate_barracuda.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="DiscosDuros">
+    <nombre>Kingston A400</nombre>
+    <tipo_disco>SSD</tipo_disco>
+    <cantidad>110</cantidad>
+    <stock>Si</stock>
+    <pvd>40</pvd>
+    <imagen>imagenes/discos/Kingston A400.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="DiscosDuros">
+    <nombre>Samsung 860</nombre>
+    <tipo_disco>SSD</tipo_disco>
+    <cantidad>250</cantidad>
+    <stock>Si</stock>
+    <pvd>90</pvd>
+    <imagen>imagenes/discos/Samsung 860.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+  <producto categoria="DiscosDuros">
+    <nombre>Crucial MX500</nombre>
+    <tipo_disco>SSD</tipo_disco>
+    <cantidad>110</cantidad>
+    <stock>Si</stock>
+    <pvd>120</pvd>
+    <imagen>imagenes/discos/Crucial MX500.jpg</imagen>
+    <informe>
+    <comentario></comentario> <!--default en xsd-->
+    </informe>
+  </producto>
+</almacen>

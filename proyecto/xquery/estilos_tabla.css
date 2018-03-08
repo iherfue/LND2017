@@ -1,0 +1,30 @@
+body {
+
+       font-family: Segoe UI Light;
+       background-color: #181818;
+       color: #F0F0F0;
+}
+
+
+h2 {
+
+    color: #11D8E8;
+
+}
+
+
+td {
+    
+    background-color: white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.color {
+    
+    background-color: #1AF061;
+
+}
