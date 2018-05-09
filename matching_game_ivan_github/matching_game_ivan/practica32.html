@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+<style type="text/css">
+    
+    img {
+        
+        position: absolute;
+    }
+    
+    div {
+        
+        position: absolute;
+        width: 500px;
+        height: 500px;
+    }
+    
+    #derecha {
+        
+        left: 500px;
+        border-left: 1px solid black;
+    }
+    
+</style>
+    
+</head>
+<body onload="generateFaces()">
+
+<h1>Matching Game</h1>
+<p>Click on the extra smiling face on the left.</p>
+    
+<div id="izquierda"></div>
+<div id="derecha"></div>
+    
+<script>
+//• Se crea una variable llamada numberOfFaces inicializada a 5.
+//• Se crea una variable llamada theLeftSide que apunta al div de la parte izquierda:
+var numberoffaces = 5;
+var theleftside = document.getElementById("izquierda");
+var therightside = document.getElementById("derecha");
+var randomleft;
+var randomrigth;
+
+
+    
+function generateFaces(){
+    
+    for(var i = 0; i <= numberoffaces -1; i++){
+        
+        var img = document.createElement("img");
+        img.src="smile.png";
+
+        randomleft = Math.floor(Math.random()*401);    
+        randomrigth = Math.floor(Math.random()*401);
+
+        img.style.left = randomleft + "px";
+        img.style.top = randomrigth + "px";
+        theleftside.appendChild(img); //Añade la nueva cara al div con id leftSide usando la función appendChild().
+       
+    }
+    
+    //Usa cloneNode(true) para copiar el div con id leftSide: leftSideImages = theLeftSide.cloneNode(true);
+    
+    var theleftsideimages = theleftside.cloneNode(true);
+    
+    theleftside.lastChild.onclick= function nextLevel(event){
+    
+    event.stopPropagation();
+    numberoffaces += 5;
+    generateFaces();
+        
+    };
+    
+     
+    //Borra el último hijo de leftSideImages
+    //• Añade leftSideImages al div con id rightSide
+    theleftsideimages.removeChild(theleftsideimages.lastChild);
+    therightside.appendChild(theleftsideimages);
+    
+    //Crea una variable llamada theBody que apunte al elemento body:
+    var thebody = document.getElementsByTagName("body")[0];
+    
+    thebody.onclick = 
+        function gameOver() { 
+        alert("Game Over!");
+            thebody.onclick = null;
+            theleftside.lastChild.onclick = null;
+        location.reload(true);
+
+    };
+   
+}
+    
+
+
+</script>
+    
+</body>
+</html>
