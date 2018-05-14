@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en">
+ <head>	
+  <meta charset="UTF-8">	
+    <title>Envío y facturazión</title>	
+    <style>		
+        input{			
+          border:1px solid black;
+	}		
+        input:focus{
+	   background-color: #E6E6E6;		
+        }
+	fieldset{
+ 	   margin-bottom: 4%;
+	}	
+    </style>
+  </head>
+
+<body>
+    <script>
+        
+        function copiar(){
+            
+             
+            var nombre = document.getElementById("shippingName");
+            var codigopostal = document.getElementById("shippingZip");
+                
+            var nombre2 = document.getElementById("billingName");
+            var codigo = document.getElementById("billingZip");
+            
+            if(document.getElementById("same").checked){
+                
+                nombre2.value = nombre.value;
+                codigo.value = codigopostal.value;
+                
+            }else{
+                
+                nombre2.value = " ";
+                codigo.value = " ";
+            }
+        }
+        
+    </script>
+    
+<h1>Formularios JavaScript</h1>
+	
+<form>
+		<fieldset>
+			<legend>Información de envío</legend>
+			<label for ="shippingName">Nombre:</label>
+			<input type = "text" name = "shipName" id = "shippingName" required><br/>
+			<label for = "shippingZip">Código postal:</label>
+			<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange= "copiar()"/>
+		<label for = "same">Misma dirección de facturación</label>
+				
+		<fieldset> 
+			<legend>Información de facturación</legend>
+			<label for ="billingName">Nombre:</label>
+			<input type = "text" name = "billName" id = "billingName" required><br/>
+			<label for = "billingZip">Código postal:</label>
+			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+			<input type = "submit" value = "Verificar"/>
+</form>
+</body>
