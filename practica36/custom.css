@@ -1,0 +1,19 @@
+.card {
+    
+    padding: 10px;
+}
+
+.boton {
+    
+    margin-top:2%; 
+    margin-bottom: 2%;
+}
+
+  td,th {
+        
+        text-align: center;
+    }
+    
+    img {
+        width: 30%;
+    }

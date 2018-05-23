@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">
+   <img src="img/logo.jpg" alt="Logo" style="width:40px;">
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="menu">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="placas.html">Placas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="formulario.html">Contacto</a>
+    </li>
+  </ul>
+  </div>
+    <form class="form-inline" action="#">
+    <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+    <button class="btn btn-success" type="submit">Buscar</button>
+  </form>
+</nav>
+<main>
+    <div class="jumbotron">
+        <h1>Modelos</h1>
+    </div>
+</main>
+    
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <table class="table table-striped table-responsive-sm" align="center">
+        <th>Placas</th>
+        <th>Procesador</th>
+        <th>RAM</th>
+        <th>Bluetooth</th>
+        <th>Hola</th>
+        
+        <tr>
+            <td>Raspberry Pi 1</td>
+            <td>ARM 700MHz</td>
+            <td>256MB</td>
+            <td>-</td>
+            <td>dsadsa</td>
+        </tr>
+        
+        <tr>
+            <td>Raspberry Pi 2</td>
+            <td>ARM 900MHz</td>
+            <td>1GB</td>
+            <td>-</td>
+            <td>dsadsa</td>
+        </tr>
+        
+        <tr>
+            <td>Raspberry Pi 3</td>
+            <td>ARM 1,2GHz</td>
+            <td>1GB</td>
+            <td>Si V.4</td>
+            <td>dsadsa</td>
+        </tr>
+        
+        <tr>
+            <td>Raspberry Pi Zero</td>
+            <td>BROAD 1GHz</td>
+            <td>512MB</td>
+            <td>-</td>
+            <td>dsadsa</td>
+        </tr>
+    </table>
+    </div>
+    
+    
+            <!--PESTAÑAS-->
+        <div class="col-md-6">        
+           <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#pi1">Pi1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#pi2">Pi2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#pi3">Pi3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#pizero">Pi Zero</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="pi1" class="container tab-pane active"><br>
+                <h3>Raspberry Pi 1</h3>
+                <img src="img/1.jpg"><p>La raspberry pi 1 es una Mini placa</p>
+              </div>
+            <div id="pi2" class="container tab-pane fade"><br>
+              <h3>Raspberry Pi 2</h3>
+                <img src="img/pi2.png"><p>La raspberry pi 2 es la mejora de la uno</p>
+            </div>
+            <div id="pi3" class="container tab-pane fade"><br>
+              <h3>Raspberry Pi 3</h3>
+                 <img src="img/pi3.png"><p>La raspberry pi 3 es la mejora de la 2</p>
+            </div>
+            <div id="pizero" class="container tab-pane fade"><br>
+              <h3>Raspberry Pi Zero</h3>
+                 <img src="img/pi-zero.jpg"><p>La raspberry pi Zero es una raspberry mucho más pequeña</p>
+            </div>
+          </div>
+        </div>  
+    </div>
+    </div>
+</body>
+</html>
