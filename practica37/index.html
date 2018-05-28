@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+      <link rel="stylesheet" type="text/css" href="bootstrap-wysihtml5.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+     <script src="/js/jqBootstrapValidation.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js"></script>
+      <script src="jqBootstrapValidation.js"></script>
+      <script src="bootstrap-maxlength.js"></script>
+  </head>
+  <body>
+      <h3>Plugin que permite seleccionar fecha y hora</h3>
+    <div id="datetimepicker" class="input-append date">
+      <input type="text">
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+    </div>
+    <script type="text/javascript">
+      $('#datetimepicker').datetimepicker({
+        format: 'dd/MM/yyyy hh:mm:ss',
+        language: 'en'
+      });
+    </script>
+      <h3>Control de entrada para formularios</h3>
+         <form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label">Email</label>
+    <div class="controls">
+      <input type="email" />
+      <p class="help-block"></p>
+    </div>
+  </div>
+</form>
+      <form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label">Escribe</label>
+    <div class="controls">
+      <input type="text" 
+        pattern="a.*z" 
+        data-validation-pattern-message="Empieza por A y termina por Z" 
+        name="some_field"
+      />
+      <p class="help-block">Empieza por A y termina por Z</p>
+    </div>
+  </div>
+          <h4>Plugin maxlength</h4>
+          <input type="text" maxlength="5">
+</form>
+      
+      <script>
+        $('input[maxlength]').maxlength();
+          $('input.className').maxlength({
+            threshold: 5
+        });
+            $('input.className').maxlength({
+            alwaysShow: true,
+            threshold: 5,
+            warningClass: "label label-success",
+            limitReachedClass: "label label-danger"
+        });
+  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+</script>
+  </body>
+<html>
