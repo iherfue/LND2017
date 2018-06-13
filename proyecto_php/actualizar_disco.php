@@ -44,11 +44,11 @@ $sn = $_GET['sn'];
         </div>
         <div class="form-group">
            <label>Capacidad</label>
-           <input type ="text" name="capacidad" value='<?php echo $fila['capacidad']?>' class="form-control">
+           <input type ="text" name="capacidad" pattern="[0-9]{2,}" value='<?php echo $fila['capacidad']?>' class="form-control">
         </div>
         <div class="form-group">
            <label>Origen</label>
-           <input type ="text" name="origen" value='<?php echo $fila['origen']?>' class="form-control">
+           <input type ="text" name="origen" pattern="[A-Za-z]{3,}" value='<?php echo $fila['origen']?>' class="form-control">
         </div>
         <div class="form-group">
            <label>Casilla</label>
