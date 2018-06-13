@@ -47,7 +47,7 @@ $id_distribuidor = $_GET['id_distribuidor'];
         </div>
         <div class="form-group">
            <label>Distribución</label>
-           <input type ="text" name="tipo_distribucion" value='<?php echo $fila['tipo_distribucion']?>' class="form-control">
+           <input type ="text" name="tipo_distribucion" pattern="[A-Za-z]{2,20}" value='<?php echo $fila['tipo_distribucion']?>' class="form-control">
         </div>
         <div class="form-group">
            <label>Dirección</label>
