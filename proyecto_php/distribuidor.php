@@ -128,7 +128,7 @@ if (isset($_POST["envia"])) {
                             </div>
                            <div class="form-group">
                                 <label>Distribución</label>
-                                <input type="text" name="tipo_distribucion" maxlengh = "20" id="distribucion" class="form-control" placeholder="" title="Ayuda" data-toggle="popover" data-trigger="focus" data-content="Introduzca el tipo de distribución (Pantallas,Componentes,etc..)">
+                                <input type="text" name="tipo_distribucion" pattern="[A-Za-z]{2,20}" maxlengh = "20" id="distribucion" class="form-control" placeholder="" title="Ayuda" data-toggle="popover" data-trigger="focus" data-content="Introduzca el tipo de distribución (Pantallas,Componentes,etc..)">
                             </div>
                             <div class="form-group">
                                 <label>Dirección *</label>
