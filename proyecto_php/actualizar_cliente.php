@@ -38,19 +38,19 @@ $id = $_GET['id_cliente'];
         </div>
         <div class="form-group">
              <label>Nombre</label>
-             <input type="text" name="nombre"  pattern="[A-Za-z]{ , }" value='<?php echo $fila['nombre']?>' class="form-control" id="nombre">
+             <input type="text" name="nombre" maxlength="20" pattern="[A-Za-z]{1,10}" value='<?php echo $fila['nombre']?>' class="form-control" id="nombre">
         </div>
         <div class="form-group">
              <label>Apellido</label>
-             <input type="text" name="apellido" pattern="[A-Za-z ]{ , }" class='form-control' value="<?php echo $fila['apellido']?>" id="apellido">
+             <input type="text" name="apellido" pattern="[A-Za-z ]{1,25}" class='form-control' value="<?php echo $fila['apellido']?>" id="apellido">
         </div>
         <div class="form-group">
              <label>Direccion</label>
-             <input type="text" name="direccion" pattern="[A-Za-z0-9/ ]{5,}" class='form-control' value="<?php echo $fila['direccion']?>">
+             <input type="text" name="direccion" pattern="[A-Za-z0-9/ ]{5,30}" class='form-control' value="<?php echo $fila['direccion']?>">
         </div>
         <div class="form-group">
              <label>Teléfono</label>
-             <input type="text" name="telefono" class='form-control' value="<?php echo $fila['telefono']?>">
+             <input type="text" name="telefono" pattern="[0-9]{9,9}" class='form-control' value="<?php echo $fila['telefono']?>">
         </div>
         <div class="form-group">
              <label>Email</label>
