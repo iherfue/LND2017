@@ -1,0 +1,54 @@
+table{
+    width: 100%;
+}
+
+.novisible{
+    display: none;
+}
+
+#tabla-partes{
+    margin-top: 5%;
+}
+
+#resumen{
+
+    padding: 50px;
+}
+
+header {
+
+    margin-top: 2%;
+}
+
+.buscar {
+
+    margin-left: 70%;
+}
+
+.busqueda_discos_fallos{
+
+    margin-left: 70%;
+    margin-top: 0.2%;
+}
+
+.añadir{
+    margin-left: -2%;
+    margin-top: 1%;
+}
+
+@media (max-width:1000px){
+    
+    #container {
+        
+        display: none !IMPORTANT;
+    }
+    #ingresos{
+        
+        display: none !IMPORTANT;
+    }
+    
+    .partes{
+        
+        margin-top: 20%;
+    }
+}
