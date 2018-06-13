@@ -30,7 +30,7 @@ $partes_ultimos = "select * from parte_servicio order by id_parte desc limit 5";
 $partes = mysqli_query($conexion, $partes_ultimos);
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Inicio</title><?php
         $head = cabecera();
